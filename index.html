@@ -8,27 +8,48 @@
         <style>
             body {
                 text-align: center;
+                font-size: 100%;
             }
-            ul#emails > li {
+            ul#links {
+                padding: 0;
                 list-style-type: none;
+            }
+            ul#links > li {
+                display: inline;
+            }
+            ul#links > li:after {
+                content: " \00b7 ";
+            }
+            ul#links > li:last-child:after {
+                content: "";
+            }
+            p {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 60%;
+            }
+            .disclaimer {
+                font-style: italic;
+                font-size: 0.875em;
             }
         </style>
     </head>
     <body>
-        <h1>Dmitry Lubyako</h1>
-        <strong>
-            MEng &amp; BA Information and Computer Engineering<br/>
-            Trinity College, University of Cambridge<br/>
-            2018-2022<br/>
-        </strong>
-        <em>
-            also CentraleSupélec, Université Paris-Saclay<br/>
-            2020-2021<br/>
-        </em>
-        <p>I can be reached at</p>
-        <ul id="emails">
-            <li><kbd>dmitry АТ lubyako DОТ com</kbd> (for personal and professional correspondence)</li>
-            <li><kbd>dl605 АТ eng DОТ cam DОТ ac DОТ uk</kbd> (for Cambridge correspondence)</li>
+        <h1>Дмитрий Лубяко<br/>Dmitry Lubyako</h1>
+        <kbd>dmitry АТ lubyako DОТ com</kbd><br/>
+        <ul id="links">
+            <li><a href="https://www.linkedin.com/in/dmitrylubyako/">LinkedIn</a></li>
+            <li><a href="public_key.asc">PGP</a></li>
+            <li><a href="https://github.com/d5l6">GitHub</a></li>
         </ul>
+        <p>
+            MEng &amp; BA Information and Computer Engineering<br/>
+            <a href="https://trin.cam.ac.uk/">Trinity College</a>, University of Cambridge, United Kingdom<br/>
+            2018-2022<br/>
+            <a href="https://www.centralesupelec.fr/">CentraleSupélec</a>, Université Paris-Saclay, France<br/>
+            2020-2021<br/>
+        </p>
+        <p class="disclaimer">Opinions and beliefs expressed by me are my own, and do not necessarily reflect those of my current or past employers.</p>
+        <p class="disclaimer">Any social media account claiming to be me and not listed on this page is lying.</p>
     </body>
 </html>
